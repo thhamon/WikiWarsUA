@@ -1,0 +1,2 @@
+# WikiWarsUA
+WikiaWars Ukrainian Corpus

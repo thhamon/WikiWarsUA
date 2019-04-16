@@ -51,9 +51,9 @@ To run the evaluation scripts, you must follow the following steps
 
   1. Create a top directory HDLTEVALPATH
 
-     -------------------------------------------------------------------
-     mkdir HDLTEVALPATH
-     -------------------------------------------------------------------
+```
+mkdir HDLTEVALPATH
+```
 
   2. Download the Heideltime evaluation script archive
      (script-2015-06-16.tar.gz or script-2015-06-16.zip) available at
@@ -62,37 +62,36 @@ To run the evaluation scripts, you must follow the following steps
      and extract them into the HDLTEVALPATH. The scripts are in
      HDLTEVALPATH/scripts .
 
-     -------------------------------------------------------------------
-     cd HDLTEVALPATH
-     tar xzvf script-2015-06-16.tar.gz
-     cd ..
-     -------------------------------------------------------------------
+```cd HDLTEVALPATH
+tar xzvf script-2015-06-16.tar.gz
+cd ..
+```
 
   3. Create the following directories: UAEVALPATH, UAEVALPATH/corpora,
      UAEVALPATH/corpora/wikiwarsua, UAEVALPATH/uima_output,
      UAEVALPATH/uima_output/wikiwarsua and
      UAEVALPATH/evaluation_results .
 
-     -------------------------------------------------------------------
-     mkdir UAEVALPATH UAEVALPATH/corpora UAEVALPATH/corpora/wikiwarsua
-     mkdir UAEVALPATH/uima_output UAEVALPATH/uima_output/wikiwarsua
-     mkdir UAEVALPATH/evaluation_results 
-     -------------------------------------------------------------------
+```
+mkdir UAEVALPATH UAEVALPATH/corpora UAEVALPATH/corpora/wikiwarsua
+mkdir UAEVALPATH/uima_output UAEVALPATH/uima_output/wikiwarsua
+mkdir UAEVALPATH/evaluation_results
+```
 
   4. Copy the WikiWarsUA/keyinline directory into
      UAEVALPATH/corpora/wikiwarsua
 
-     -------------------------------------------------------------------
-     cp -a WikiWarsUA/keyinline UAEVALPATH/corpora/wikiwarsua
-     -------------------------------------------------------------------
+```
+cp -a WikiWarsUA/keyinline UAEVALPATH/corpora/wikiwarsua
+```
 
   5. Prepare the WikiWarsUA corpora by running the script
      prepare_corpus.sh with the following arugments: wikiwarsua (name
      of the corpus) UAEVALPATH (path of the corpus)
 
-     -------------------------------------------------------------------
-     UAVALPATH/scripts/prepare_corpus.sh wikiwarsua UAEVALPATH
-     -------------------------------------------------------------------
+```
+UAVALPATH/scripts/prepare_corpus.sh wikiwarsua UAEVALPATH
+```
 
   6. Copy the files annotated by your sytem in
      UAEVALPATH/uima_output/wikiwarsua .
@@ -100,25 +99,25 @@ To run the evaluation scripts, you must follow the following steps
      Note that the files must have the same name as those in
      UAEVALPATH/corpora/wikiwarsua
 
-     -------------------------------------------------------------------
-     cp results-hdltua/* UAEVALPATH/uima_output/wikiwarsua
-     -------------------------------------------------------------------
+```
+cp results-hdltua/* UAEVALPATH/uima_output/wikiwarsua
+```
 
    7. Run the evaluation script evaluate_corpus_tempeval3style.sh with
       the following arguments: wikiwarsua (name of the corpus)
       UAEVALPATH (path to the corpus) HDLTEVALPATH (path to the
       heideltime evaluation script)
    
-     -------------------------------------------------------------------
-     UAEVALPATH/scripts/evaluate_corpus_tempeval3style.sh wikiwarsua UAEVALPATH HDLTEVALPATH
-     -------------------------------------------------------------------
+```
+UAEVALPATH/scripts/evaluate_corpus_tempeval3style.sh wikiwarsua UAEVALPATH HDLTEVALPATH
+```
 
    8. Evaluation results are in the file
       UAEVALPATH/evaluation_results/wikiwarsua/evaluation_results.txt
 
-     -------------------------------------------------------------------
-     cat UAEVALPATH/evaluation_results/wikiwarsua/evaluation_results.txt
-     -------------------------------------------------------------------
+```
+cat UAEVALPATH/evaluation_results/wikiwarsua/evaluation_results.txt
+```
 
 
 

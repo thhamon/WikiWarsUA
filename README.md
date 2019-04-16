@@ -1,7 +1,7 @@
 # WikiWarsUA
-WikiaWars Ukrainian Corpus
+### WikiaWars Ukrainian Corpus
 
-Ukrainian Temporally Tagged Corpus of Historical Narratives
+## Ukrainian Temporally Tagged Corpus of Historical Narratives
 
 Version: 1.0
 Creation Date: April 14, 2019
@@ -11,7 +11,7 @@ Authors:
 Natalia Grabar, natalia.grabar@univ-lille.fr
 Thierry Hamon, hamon@limsi.fr
 
-1. Corpus Description
+## 1. Corpus Description
 
 WikiWarsUA is a corpus of Wikipedia articles describing the most
 famous wars in history, including the biggest wars of the 20th
@@ -26,7 +26,7 @@ collected similarly to the building of the original WikiWars corpus
 TIMEX3 norm. Overall, on 25 Wikipedia articles, we count 2,719
 reference temporal units.
 
-2. Repository Structure
+## 2. Repository Structure
 
 The WikiWarsUA package is structured as follows:
 
@@ -41,7 +41,7 @@ WikiWarsUA/keyinline/
 WikiWarsUA/scripts
         Directory containing the evaluation script
 
-3. Use of the evaluation scripts
+## 3. Use of the evaluation scripts
 
 The evaluation scripts for WikiWarsUA are based on the Heideltime
 evaluation scripts [4].
@@ -121,7 +121,7 @@ cat UAEVALPATH/evaluation_results/wikiwarsua/evaluation_results.txt
 
 
 
-4. Acknowledgements
+## 4. Acknowledgements
 
 If you use WikiWarsUA, please cite the following paper:
 
@@ -132,6 +132,7 @@ on Computational Linguistics and Intelligent Systems. April 18-19,
 
 The BibTeX citation is:
 
+```
 @InProceedings{Grabar&Hamon2019,
   author = 	 {Natalia Grabar and Thierry Hamon},
   title = 	 {WikiWars-UA: Ukrainian corpus annotated with temporal expressions},
@@ -142,15 +143,15 @@ The BibTeX citation is:
   address = 	 {Kharkiv, Ukraine},
   date =      {18-19},
 }
+```
 
-
-5. License
+## 5. License
 
 This work is licensed under a Creative Commons
 Attribution-NonCommercial-ShareAlike 3.0 Unported License.
 https://en.wikisource.org/wiki/Creative_Commons_Attribution-ShareAlike_3.0_Unported
 
-6. References
+## 6. References
 
 [1] Mazur, P., Dale, R.: WikiWars: A new corpus for research on
 temporal expressions.  In: Int Conf on Empirical Methods in Natural

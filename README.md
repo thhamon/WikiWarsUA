@@ -27,7 +27,7 @@ TIMEX3 norm. Overall, on 25 Wikipedia articles, we count 2,719
 reference temporal units.
 
 2. Repository Structure
------------------------
+
 The WikiWarsUA package is structured as follows:
 
 WikiWarsUA/README.md
